@@ -1,3 +1,31 @@
 # Try-fast
-This is my first Git Repository.
- I am working the  "Java" project
+  import java.sql.SQLOutput;
+  import java.util.Scanner;
+
+public class Main {
+
+public static void main(String[]args) {
+   Scanner sc = new Scanner(System.in);
+   int myNumber = (int)(Math.random()*100);
+int userNumber = 0;
+
+do {
+    System.out.println("Guess what is the number:(1-100)");
+    userNumber = sc.nextInt();
+
+      if (userNumber== myNumber){
+        System.out.println("THE NUMBER IS CORRECT !!");
+        break;
+
+    } else if (userNumber > myNumber) {
+          System.out.println("your number is too large");
+      }
+      else {
+          System.out.println("your number is too small");
+      }
+  } while (userNumber >=0);
+    System.out.println("My Number was: ");
+    System.out.println(myNumber);
+
+    }
+}
